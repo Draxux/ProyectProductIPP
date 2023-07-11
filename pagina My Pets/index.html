@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <title>My Pets</title>
+        <link rel="shortcut icon" href="img/favicon.png" />
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/miestilo.css">
+        <script>
+	        // Función para mostrar un mensaje emergente al cargar la página
+	        window.onload = function() {
+	            alert("Bienvenido a la página");
+	            // Pedir el nombre del usuario y mostrar un mensaje personalizado
+	            var nombre = prompt("Ingresa tu nombre");
+	            alert("¡Que tengas una linda experiencia, " + nombre + "!");
+	        	};
+    	</script>
+   </head>
+<body>
+     <!-- Navegacion -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><p><strong class='title'>My</strong> Pets</p></a>
+            </div>
+            <!-- Coleccion de links/Dropdown -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <!-- Quería agregar mas paginas, cree algunas a la mitad (como la tienda) -->
+                    <!-- Agregar ítems uno por uno no se puede por tiempo, mejor desde una base de datos. -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="disabled">
+                                <a href="#">Productos para tu mascota</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">Guarderia</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="#">Servicios generales </a>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#section1">Acerca De</a>
+                    </li>
+                    <li>
+                        <a href="#section2">Contactenos</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+        
+        <!--slide-->
+        <div id="mislide" class="carousel slide" data-ride="carousel">
+            <!--indicador-->
+            <ol class="carousel-indicators">
+                <li data-target="#mislide" data-slide-to="0" class=""></li>
+                <li data-target="#mislide" data-slide-to="1" class=""></li>
+                <li data-target="#mislide" data-slide-to="2" class="active "></li>
+            </ol>
+            <!--Wrapper/Contenedor de imagenes-->
+            <div class="carousel-inner">
+                <div class="item">
+                    <img data-src="" alt="" src="img/marketing-para-clinica-veterinaria.jpg" width='900px'>
+                    <div class="container">
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img data-src="" alt="" src="img/mascotas.jpg" width='867px' align='center'>
+                    <div class="container">
+                        <div class="carousel-caption">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img data-src="" alt="" src="img/dogill.jpg" width='900px' align='center'>
+                    <div class="container">
+                        <div class="carousel-caption">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--controles-->
+            <a class="left carousel-control" href="#mislide" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#mislide" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        <!--panel de servicio-->
+        <div class="jumbotron">
+        <div class="container">
+        <div class="row">
+        	<!--caja servicio1-->
+            <div class="col-md-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading"><img class="img-rounded" style="width:200px;height:200px; background: #f6f6f6; border: 2px solid #474e5d; border-radius: 5px; " src="img/fooddog.png"></div>
+                    <div class="panel-body">
+                        <h3><strong>Alimentos</strong></h3>
+                        <p>Ofrecemos los mejores alimentos para su mascota. Tenemos Hills, Royal Canin, Taste of the Wild, Purina Proplan, Total Max y Pedigree a su completa disposición 24/7.</p>
+                        <a href="#" class="btn btn-primary">Saber Mas</a>
+                    </div>
+                </div>
+            </div>
+            <!--caja servicio2-->
+             <div class="col-md-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading"><img class="img-rounded" style="width:200px;height:200px; background: #f6f6f6; border: 2px solid #474e5d; border-radius: 5px; " src="img/itemspet.webp"></div>
+                    <div class="panel-body">
+                        <h3><strong>Accesorios</strong></h3>
+                        <p>Accesorios de alta calidad que van desde las necesidades básicas como correas o collares, platos y cajas de arena hasta vestidos que harán la vida de su mascota más feliz.</p>
+                        <a href="#" class="btn btn-primary">Saber Mas</a>
+                    </div>
+                </div>
+            </div>
+            <!--caja servicio3-->
+             <div class="col-md-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading"><img class="img-rounded" style="width:200px;height:200px; background: #f6f6f6; border: 2px solid #474e5d; border-radius: 5px; " src="img/vet.webp"></div>
+                    <div class="panel-body">
+                        <h3><strong>Medicamentos</strong></h3>
+                        <p>Están a disposición de nuestros clientes medicamentos especializados en todo tipo de afecciones, inclusive medicamentos homeopáticos del laboratorio alemán Heel.  </p>
+                        <a href="#" class="btn btn-primary">Saber Mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-4" id='section1'>
+    <div class="container" >
+    <!--Acerca de nosotros-->
+    
+        <div class="row" >
+            <div class="col-lg-12">
+                <h2 class="page-header">Acerca De</h2>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Quienes somos?</strong></p>
+                <p>Te invitamos a visitar nuestro sitio web asi mismo animarlo a que nos permita tratar a sus mascotas recibiendo la mejor atención médica asegurando una satisfacción completa.</p>
+
+                <p>Años de Experiencia respaldan nuestro trabajo, somos un Equipo Completo de Profesionales dedicados a nuestro trabajo con mucha Ética y Responsabilidad.</p>
+
+                
+            </div>
+            <div class="col-md-6">
+            	<div class="col-md-4">
+	            	<img class="img-circle" style="width:300px;height:200px;" src="img/GuruMascotas.jpg">
+	            	<img class="img-circle" style="width:300px;height:200px;" src="img/atent.jpg">
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+        <!--contacto-->
+        <div class="bg-1 block" id='section2'>
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Contactenos</h2>
+                </div>
+                <div class="col-md-6">
+                    <ul class='direction'>
+                        <li><strong>Direccion:</strong> Av. Vicuña Mackenna 380</li>
+                        
+                        <li><strong>Telefono:</strong> +56 9 1234 5678</li>
+                        
+                        <li><strong>Email:</strong> contact@mypet.com</li>
+                        
+                    </ul>
+                </div>
+                <!-- Me pareció útil y muy fácil de insertar un mapa al sitio web. -->
+                <div class="col-md-6">
+                   <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d428.33421783593377!2d-70.63256091008576!3d-33.446112189289536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scl!4v1688440333122!5m2!1sen!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        
+            <!--footer-->
+            <footer class="bg-2">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-4"><span class='glyphicon glyphicon-copyright-mark'></span>Copyrigt by Duvan Camilo Gil Cuartas 2023</div>
+                        
+                        <div class="col-md-4"> <strong>WebCreativa</strong>, Diseño web con estilo y personalidad.</div>
+                    </div>
+                </div>
+            </footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

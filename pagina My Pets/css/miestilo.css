@@ -1,0 +1,65 @@
+body {
+        padding-top: 50px;
+        font: Montserrat, sans-serif;
+        }
+.fill{
+
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #1abc9c;
+
+}
+.navbar-nav li a{
+    color: #45410A !important;
+}
+.title{
+    color: #45410A;
+}
+#mislide ol li{
+    background-color: #45410A;
+}
+.navbar-brand{
+    font: 20px;
+    color: #ffffff !important;
+}
+.dropdown-menu{
+    background-color: #1abc9c;
+}
+#basic-addon2{
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+.block{
+    margin-bottom: 50px;
+}
+.direction{
+    font-size: 26px;
+    list-style: none;
+}
+footer{
+    padding: 50px
+}
+/* diferentes colores de fondos de la pagina */
+.bg-1{
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+    padding: 50px;
+}
+.bg-2{ 
+      background-color: #1abc9c; /* Light Green */
+      color: #45410A;
+  }
+.bg-3{
+    background-color: #f6f6f6; /* Grey */
+  }
+.bg-4{
+    background-color: #ffffff; /* White */
+    padding: 50px;
+}
+#section1 #section2{
+    padding: 25px;
+}
