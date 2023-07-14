@@ -1,0 +1,9 @@
+.container {
+    margin-top: 50px;
+}
+.dropdown-menu {
+    min-width: 100px;
+}
+#justify{
+    text-align: justify;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Pets</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo2.css">
+    
+</head>
+<body>
+    
+    <div class="container init">
+        <!-- Contenedor principal del formulario -->
+        <form class="form-horizontal" action="main.php" method="POST">
+            <!-- Formulario que enviará los datos a main.php usando el método POST -->
+            <div class="form-group">
+                <h2 style="font-weight: bold;">Página de inicio</h2>
+                <!-- Encabezado principal de la página -->
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="nombre">Nombre:</label>
+                <!-- Etiqueta para el campo "Nombre" -->
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" name="nombre" id="nombre" required><br>
+                    <!-- Campo de entrada de texto para el nombre, es obligatorio -->
+                </div>
+            </div> 
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="edad">Edad:</label>
+                <!-- Etiqueta para el campo "Edad" -->
+                <div class="col-sm-3">
+                    <input class="form-control" type="number" name="edad" id="edad" required><br>
+                    <!-- Campo de entrada de número para la edad, es obligatorio -->
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label for="interes"><input type="checkbox" name="interes" id="interes">¿Estás interesado en la información de la página?</label>
+                    <!-- Casilla de verificación para indicar interés en la información de la página -->
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+                <!-- Botón de envío del formulario -->
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
