@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(243, 238, 230);
+}
+.navbar {
+    padding: 5px;
+    background-color: #DAC6AD; /* Color de fondo del navbar */
+}
+.navbar-nav li a{
+    color: #45410A !important;
+}
+.navbar-brand {
+    margin-right: 30px;
+}
+.navbar-nav {
+    margin-left: auto;
+}
+.card-img-top {
+    max-width: 300px; /* Máximo ancho de la imagen */
+    max-height: 200px; /* Máximo alto de la imagen */
+    object-fit: cover; /* Ajustar la imagen al contenedor sin distorsionar */
+}
+.init{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    background-color: #5E919Eff;
+    box-shadow: 0px 0px 5px rgb(26, 26, 26, 2);
+    }
+.publ{
+    background-color: #5E919Eff;
+    box-shadow: 0px 0px 5px rgb(26, 26, 26, 2);
+}
